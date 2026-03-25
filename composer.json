@@ -1,11 +1,14 @@
 {
-    "name": "horde/bundle",
+    "name": "horde6/bundle",
+    "replace": {
+        "horde/bundle": "^1 || dev-FRAMEWORK_6_0"
+    },
     "description": "A base project for a horde installation",
     "type": "project",
     "require": {
         "composer-plugin-api": "^2.2",
-        "horde/horde-installer-plugin": "^3 || ^2.5.1 || dev-FRAMEWORK_6_0 || dev-master",
-        "horde/horde": "^6 || dev-FRAMEWORK_6_0",
+        "horde6/horde-installer-plugin": "^3 || dev-FRAMEWORK_6_0",
+        "horde6/horde": "^6 || dev-FRAMEWORK_6_0",
         "horde/routes": "^3 || dev-FRAMEWORK_6_0",
         "horde/hordectl": "^1 || dev-FRAMEWORK_6_0 || dev-master"
     },
@@ -29,7 +32,7 @@
     },
     "config": {
         "allow-plugins": {
-            "horde/horde-installer-plugin": true
+            "horde6/horde-installer-plugin": true
         }
     }
 }
